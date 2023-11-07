@@ -1,0 +1,30 @@
+let imgBig = document.querySelector('.imgBig')
+let imgOne = document.querySelector('.imgOne')
+let imgTwo = document.querySelector('.imgTwo')
+let imgThree = document.querySelector('.imgThree')
+let imgFour = document.querySelector('.imgFour')
+
+imgOne.addEventListener('click', () => {
+    let src = imgOne.getAttribute('src')
+    let src2 = imgBig.getAttribute('src')
+    imgOne.setAttribute("src", src2)
+    imgBig.setAttribute("src", src)
+})
+imgTwo.addEventListener('click', () => {
+    let src = imgTwo.getAttribute('src')
+    let src2 = imgBig.getAttribute('src')
+    imgTwo.setAttribute("src", src2)
+    imgBig.setAttribute("src", src)
+})
+imgThree.addEventListener('click', () => {
+    let src = imgThree.getAttribute('src')
+    let src2 = imgBig.getAttribute('src')
+    imgThree.setAttribute("src", src2)
+    imgBig.setAttribute("src", src)
+})
+imgFour.addEventListener('click', () => {
+    let src = imgFour.getAttribute('src')
+    let src2 = imgBig.getAttribute('src')
+    imgFour.setAttribute("src", src2)
+    imgBig.setAttribute("src", src)
+})
